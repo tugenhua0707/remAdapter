@@ -1,0 +1,522 @@
+
+@charset "utf-8";/* CSS Document */
+html { font-size: 100px; }
+@media(min-width: 320px) { html { font-size: 100px; } }
+@media(min-width: 360px) { html { font-size: 112.5px; } }
+@media(min-width: 400px) { html { font-size: 125px; } }
+@media(min-width: 640px) { html { font-size: 200px; } }
+
+@multiple: 200;
+.hidden {display:none !important;}
+.redBag-container {
+  width:100%;
+  background: #e44f59;
+  overflow: hidden;
+}
+.redBag-container .banner {
+  width: 100%;
+  height:round(548rem/@multiple,2);
+  overflow: hidden;
+}
+.redBag-warp1 {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+  background: #df2943;
+  z-index: 12;
+  -webkit-border-radius:round(15rem / @multiple,2);
+  overflow: hidden;
+}
+.redBag-warp2 {
+  background: #e44f59;
+  -webkit-border-radius:round(15rem / @multiple,2);
+  margin-top:round(15rem / @multiple,2);
+  padding-bottom: round(30rem / @multiple,2);
+  overflow: hidden;
+}
+.redBag-inner {
+  background: #fefce1;
+  -webkit-border-radius:round(15rem / @multiple,2);
+  margin-top:round(15rem / @multiple,2);
+  padding-bottom: round(30rem / @multiple,2);
+  overflow: hidden;
+}
+.redBag-header {
+  width: 100%;
+  overflow: hidden;
+}
+.img-photo {
+  float: left;
+  overflow: hidden;
+  width:round(110rem / @multiple,2);
+  height:round(119rem / @multiple,2);
+  margin: round(38rem / @multiple,2) 0 0 round(20rem / @multiple,2);
+  background-size:round(110rem / @multiple,2) round(119rem / @multiple,2);
+}
+.redBag-r {
+  float: left;
+  width: round(463rem / @multiple,2);
+  height: round(169rem / @multiple,2);
+  margin-left: round(18rem / @multiple,2);
+}
+.redBag-t {
+    width: round(427rem / @multiple,2);
+    height: round(65rem / @multiple,2);
+    background-size: round(427rem / @multiple,2) round(65rem / @multiple,2);
+    margin-top: round(16rem / @multiple,2);
+}
+.redBag-tips {
+  position: relative;
+  float: left;
+  text-align: left;
+  background: #fc82a8;
+  color: #fff;
+  width:round(390rem / @multiple,2);
+  height: round(65rem / @multiple,2);
+  -webkit-border-radius: round(15rem / @multiple,2);
+  margin-top:round(20rem / @multiple,2);
+  line-height: round(65rem / @multiple,2);
+  font-size: round(28rem / @multiple,2);
+  padding-left: round(12rem / @multiple,2);
+}
+.redBag-tips:before,
+.redBag-tips:after {
+  display: block;
+  content: "";
+  position: absolute;
+  border-style: dashed solid dashed dashed;
+  border-color: transparent #fc82a8 transparent transparent;
+  font-size: 0;
+  line-height: 0;
+  border-width:round(20rem / @multiple,2) round(30rem / @multiple,2); 
+  left:round(-45rem / @multiple,2);
+  top:round(14rem / @multiple,2);
+}
+.redBag-tips span {
+  color: #ffeb03;
+  font-weight: 700;
+}
+.redBag-btn {
+  width: 100%;
+  margin-top:round(32rem / @multiple,2);
+  overflow: hidden;
+}
+.redBag-btn .self-btn,
+.redBag-btn .friend-btn {
+  float: left;
+  text-align: center;
+  background: #e33c54;
+  color: #ffeb00;
+  width: round(270rem / @multiple,2);
+  height: round(80rem / @multiple,2);
+  line-height: round(87rem / @multiple,2);
+  margin-left: round(26rem / @multiple,2);
+  -webkit-border-radius: round(15rem / @multiple,2);
+  font-size: round(32rem / @multiple,2);
+  border-bottom: round(7rem / @multiple,2) solid #c6243b;
+}
+.effect-time {
+  font-size: round(22rem / @multiple,2);
+  color: #eea801;
+  margin: round(30rem / @multiple,2) 0 0 round(22rem / @multiple,2);
+}
+.effect-time i {
+  float: left;
+  background: url("@@@PREFIX@@@/images/light.png") no-repeat;
+  width: round(27rem / @multiple,2);
+  height: round(27rem / @multiple,2);
+  background-size: round(27rem / @multiple,2) round(27rem / @multiple,2);
+  background-position: 0 round(-4rem / @multiple,2);
+  padding-right: round(14rem / @multiple,2);
+}
+.prize-title {
+   margin-top: round(50rem / @multiple,2);
+   height: round(24rem / @multiple,2);
+}
+.prize-wrap {
+  width: 100%;
+  margin: round(28rem / @multiple,2) 0 0 round(18rem / @multiple,2);
+  overflow: hidden;
+}
+.prize-wrap .prize-img {
+  float: left;
+  width: round(110rem / @multiple,2);
+  height: round(120rem / @multiple,2);
+  background-size: round(110rem / @multiple,2) round(120rem / @multiple,2);
+}
+.prize-tips {
+  float: left;
+  width: round(394rem / @multiple,2);
+  height: round(65rem / @multiple,2);
+  margin:round(32rem / @multiple,2) 0 0 round(32rem / @multiple,2);
+  background-size: round(394rem / @multiple,2) round(65rem / @multiple,2);
+}
+.get-prize-container li {
+  margin-left: round(16rem / @multiple,2);
+}
+.get-prize-container li:nth-child(1) {
+  background: url("@@@PREFIX@@@/images/money1.jpg") no-repeat;
+}
+.get-prize-container li:nth-child(2) {
+  background: url("@@@PREFIX@@@/images/money2.jpg") no-repeat;
+}
+.get-prize-container li:nth-child(3) {
+  background: url("//res.tongbanjie.com/wap/act/redBag/images/money3.jpg") no-repeat;
+}
+.get-prize-container li:nth-child(1),.get-prize-container li:nth-child(1).current {
+  width: round(185rem / @multiple,2);
+  height: round(304rem / @multiple,2);
+  background-size: round(185rem / @multiple,2) round(304rem / @multiple,2);
+  margin-top:round(49rem / @multiple,2);
+}
+
+.get-prize-container li:nth-child(2),.get-prize-container li:nth-child(2).current {
+  width: round(186rem / @multiple,2);
+  height: round(313rem / @multiple,2);
+  background-size: round(186rem / @multiple,2) round(313rem / @multiple,2);
+  margin-top: round(39rem / @multiple,2);
+}
+.get-prize-container li:nth-child(3),.get-prize-container li:nth-child(3).current {
+  width: round(185rem / @multiple,2);
+  height: round(361rem / @multiple,2);
+  background-size: round(185rem / @multiple,2) round(361rem / @multiple,2);
+  margin-top: round(-6rem/ @multiple,2);
+}
+.get-prize-container {
+  width: 100%;
+  overflow: hidden;
+}
+.get-prize-container li {
+  float: left;
+  text-indent: -9999px;
+}
+.f-logo {
+  width:100%;
+  height: round(90rem / @multiple,2);
+  margin-top: round(30rem / @multiple,2);
+}
+/* 登录弹窗 */
+.login-window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("@@@PREFIX@@@/images/login.png") no-repeat;
+  width:round(515rem / @multiple,2);
+  height: round(480rem / @multiple,2);
+  background-size: round(515rem / @multiple,2) round(480rem / @multiple,2);
+}
+.login-window .closed {
+  position: absolute;
+  z-index: 11;
+  width: round(52rem / @multiple,2);
+  height: round(52rem / @multiple,2);
+  top:round(76rem / @multiple,2);
+  right: round(8rem / @multiple,2);
+}
+.window-tips {
+  color: #666;
+  text-align: center;
+  margin-top: round(296rem / @multiple,2);
+  font-size: round(30rem / @multiple,2);
+}
+.window-btn {
+  background: #f14476;
+  color: #fff98e;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: round(40rem / @multiple,2);
+  width: round(343rem / @multiple,2);
+  height: round(74rem / @multiple,2);
+  font-size: round(30rem / @multiple,2);
+  line-height:round(80rem / @multiple,2);
+  -webkit-border-radius: round(10rem / @multiple,2);
+  border-bottom: round(6rem / @multiple,2) solid #ce2455;
+}
+/* 增加类名 */
+.redBag-btn .self-btn.current {
+  background: #dcdada;
+  color: #a1a0a0;
+}
+.redBag-btn .friend-btn.current {
+  background: #dcdada;
+  color: #a1a0a0;
+}
+/* 撩红包css3动画 */
+.animate-container {
+  width: 150px;
+  height: 168px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.animate-container.current {
+  width: 80% !important;
+  height: 50% !important;
+}
+.redBag-animate {
+  width: 150px;
+  height: 168px;
+  background: url("@@@PREFIX@@@/images/icon.png") no-repeat center center;
+  animation: redBag-animate1 1.5s steps(1, end) 1;
+  -webkit-animation: redBag-animate1 1.5s steps(1, end) 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.redBag-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.redBag-heart img {
+  animation: redBag-heart1 1s steps(1, end) 1;
+  -webkit-animation: redBag-heart1 1s steps(1, end) 1;
+  margin-top: 31px;
+}
+.j-closed {
+  position: absolute;
+  background: url("@@@PREFIX@@@/images/closed.png") no-repeat;
+  width: round(55rem / @multiple,2);
+  height: round(51rem / @multiple,2);
+  background-size: round(51rem / @multiple,2) round(51rem / @multiple,2);
+  top: round(96rem / @multiple,2);
+  right: round(51rem / @multiple,2);
+}
+.j-circle {
+  position: absolute;
+  background: url("@@@PREFIX@@@/images/round.png") no-repeat;
+  width: round(139rem / @multiple,2);
+  height: round(139rem / @multiple,2);
+  background-size: round(139rem / @multiple,2) round(139rem / @multiple,2);
+  top: round(140rem / @multiple,2);
+  left: round(186rem / @multiple,2);
+}
+.red-desc {
+  color: #f14476;
+  position:absolute;
+  top: round(292rem / @multiple,2);
+  left: round(78rem / @multiple,2);
+  font-size: round(26rem / @multiple,2);
+}
+.heart-btn {
+  position:absolute;
+  background: #f14476;
+  color: #fde78b;
+  text-align: center;
+  top: round(334rem / @multiple,2);
+  left: round(140rem / @multiple,2);
+  font-size: round(28rem / @multiple,2);
+  width: round(218rem / @multiple,2);
+  height: round(64rem / @multiple,2);
+  border-bottom: round(6rem / @multiple,2) solid #ce2455;
+  line-height: round(70rem / @multiple,2);
+  -webkit-border-radius: round(6rem / @multiple,2);
+}
+/* 活动css */
+.active-rule {
+  margin: 0 auto;
+  text-align: center;
+  color: #960637;
+  background: #fab2b7;
+  width:round(250rem / @multiple,2);
+  height:round(54rem / @multiple,2);
+  line-height:round(54rem / @multiple,2);
+  font-size: round(24rem / @multiple,2);
+  -webkit-border-radius: round(25rem / @multiple,2);
+  margin-top: round(24rem / @multiple,2);
+}
+.active-content {
+  width: 92%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.active-content .active-title {
+  width: 100%
+  float: left;
+  color: #e33671;
+  overflow: hidden;
+}
+.active-content .active-title span {
+  float: left;
+}
+.active-content .active-title i {
+  float: left;
+}
+.active-inner p {
+  color: #641f37;
+}
+.active-rule i {
+  display: inline-block;
+  width: round(40rem / @multiple,2);
+  height:round(14rem / @multiple,2);
+  background: url("@@@PREFIX@@@/images/down_icon.png") no-repeat;
+  background-size: round(20rem / @multiple,2) round(12rem / @multiple,2);
+  background-position: round(4rem / @multiple,2) 0;
+  
+}
+.active-rule i.current {
+  background: url("@@@PREFIX@@@/images/up_icon.png") no-repeat;
+  background-position: round(4rem / @multiple,2) 0;
+  background-size: round(20rem / @multiple,2) round(12rem / @multiple,2);
+}
+.active-inner {
+    margin-top: round(30rem / @multiple,2);
+    margin-bottom: round(30rem / @multiple,2);
+}
+.active-content .active-title i {
+  float: left;
+}
+.load-failure {
+  width: 70%;
+  margin: 0 auto;
+  color: #641f37;
+}
+.load-failure .pcls {
+  float: left;
+  width: 50%;
+  text-align: right;
+  padding-right: 2%;
+}
+.load-failure .refresh {
+  float: left;
+  width: 44%;
+}
+.load-failure .refresh span {
+  text-decoration: underline;
+  color: orange;
+  padding-left: 4%;
+}
+/* 增加类名 */
+.redBag-btn .self-btn.current {
+  border-bottom: round(7rem / @multiple,2) solid #bbb;
+}
+.redBag-btn .friend-btn.current {
+    border-bottom: round(7rem / @multiple,2) solid #bbb;
+}
+@keyframes redBag-heart1 {
+  0% {
+    transform: scale(0.08, 0.08);
+  }
+  15% {
+    transform: scale(0.1, 0.1);
+  }
+  25% {
+    transform: scale(0.2, 0.2);
+  }
+  40% {
+    transform: scale(0.4, 0.4);
+  }
+  55% {
+    transform: scale(0.6, 0.6);
+  }
+  70% {
+    transform: scale(0.8, 0.8);
+  }
+  85% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(3, 3);
+  }
+}
+@-webkit-keyframes redBag-heart1 {
+  0% {
+    transform: scale(0.08, 0.08);
+  }
+  15% {
+    transform: scale(0.1, 0.1);
+  }
+  25% {
+    transform: scale(0.2, 0.2);
+  }
+  40% {
+    transform: scale(0.4, 0.4);
+  }
+  55% {
+    transform: scale(0.6, 0.6);
+  }
+  70% {
+    transform: scale(0.8, 0.8);
+  }
+  85% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(3, 3);
+  }
+}
+@-webkit-keyframes redBag-animate1 {
+  0% {
+    background-position: 0 0;
+  }
+  10% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: 0 -168px;
+  }
+  30% {
+    background-position: 0 -336px;
+  }
+  40% {
+    background-position: 0 -504px;
+  }
+  50% {
+    background-position: 0 -504px;
+  }
+  60% {
+    background-position: 0 -504px;
+  }
+  70% {
+    background-position: 0 -672px;
+  }
+  80% {
+    background-position: 0 -840px;
+  }
+  100% {
+    background-position: 0 -1008px;
+  }
+}
+@keyframes redBag-animate1 {
+  0% {
+    background-position: 0 0;
+  }
+  10% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: 0 -168px;
+  }
+  30% {
+    background-position: 0 -336px;
+  }
+  40% {
+    background-position: 0 -504px;
+  }
+  50% {
+    background-position: 0 -504px;
+  }
+  60% {
+    background-position: 0 -504px;
+  }
+  70% {
+    background-position: 0 -672px;
+  }
+  80% {
+    background-position: 0 -840px;
+  }
+  100% {
+    background-position: 0 -1008px;
+  }
+}
+@media(min-width: 360px) { 
+  .redBag-btn .friend-btn, .redBag-btn .self-btn {
+     margin-left:round(32rem / @multiple,2);
+  }
+}
+@media(min-width: 400px) { 
+  .redBag-btn .friend-btn, .redBag-btn .self-btn {
+     margin-left:round(32rem / @multiple,2);
+  }
+}

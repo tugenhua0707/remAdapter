@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta content="email=no" name="format-detection" />
+        <link type="text/css" rel="stylesheet" href="@@@PREFIX@@@/css/index.css" />
+        <title>全民撩红包rem实践</title>
+    </head>
+    <body id="redBag-body">
+        <div class="redBag-container" id="redBag-container">
+            <div class="banner">
+                <img src="@@@PREFIX@@@/images/banner.jpg" width="100%"/>
+            </div>
+            <div class="redBag-warp1">
+                <div class="redBag-warp2">
+                    <div class="redBag-inner">
+                        <div class="redBag-header">
+                            <div class="img-photo">
+                                <img src="@@@PREFIX@@@/images/photo1.png" width="100%"/>
+                            </div>
+                            <div class="redBag-r">
+                                <div class="redBag-t">
+                                    <img src="@@@PREFIX@@@/images/tip1.png" width="100%"/>
+                                </div>
+                                <div class="redBag-tips">您的红包已被撩<span>0</span>次~</div>
+                            </div>
+                        </div>
+                        <div class="redBag-btn">
+                            <div class="self-btn">自己先撩</div>
+                            <div class="friend-btn J_FriendBtn">拉朋友撩</div>
+                        </div>
+                        <div class="effect-time">
+                            <i></i>
+                            新老用户均可帮忙撩红包哟~
+                        </div>
+                        <div class="prize-title">
+                            <img src="@@@PREFIX@@@/images/prize.png" width="100%"/>
+                        </div>
+                        <div class="prize-wrap">
+                            <div class="prize-img">
+                                <img src="@@@PREFIX@@@/images/photo2.png" width="100%"/>
+                            </div>
+                            <div class="prize-tips">
+                                <img src="@@@PREFIX@@@/images/tip2.png" width="100%"/>
+                            </div>
+                        </div>
+                        <ul class="get-prize-container">
+                            <li>被撩2次</li>
+                            <li>被撩5次</li>
+                            <li>被撩7次</li>
+                        </ul>
+                        <div class="effect-time">
+                            <i></i>
+                            奖励将在2个工作日内发放,可叠加获得
+                        </div>
+                    </div>
+                    <div class="f-logo">
+                        <img src="@@@PREFIX@@@/images/foot-logo.png" width="100%"/>
+                    </div>
+                    <div class="active-rule J_Active">活动规则<i></i></div>
+                    <div class="active-content hidden" id="J_ActContent">
+                        <div class = "active-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-window hidden" id="login-window">
+            <div class="closed J_Closed"></div>
+            <div class="window-tips">登录了才能参加活动哟~</div>
+            <div class="window-btn" id="login-btn">立即登录</div>
+        </div>
+        <!-- 撩红包动画 -->
+        <div class="animate-container hidden">
+            <div class="redBag-animate hidden"></div>
+            <div class="redBag-heart hidden">
+                <img src="@@@PREFIX@@@/images/heart.png" width="100%" class="heart-img"/>
+            </div>
+        </div>
+    </body>
+</html>

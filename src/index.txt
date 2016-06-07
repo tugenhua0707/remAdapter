@@ -1,0 +1,52 @@
+
+针对移动端适配的方案~
+
+一： 所有的单位使用rem来适配；
+首先在页面上设置html的font-size的大小；如下我项目中的设置：
+html { font-size: 100px; }
+@media(min-width: 320px) { html { font-size: 100px; } }
+@media(min-width: 360px) { html { font-size: 112.5px; } }
+@media(min-width: 400px) { html { font-size: 125px; } }
+@media(min-width: 640px) { html { font-size: 200px; } }
+
+html的默认字体大小为100px；是针对于320px来设置的，那么在360px，400px，640px下都需要等比例缩放；
+计算公式为： 320px/100 = 360 / x; 那么 x = (360*100 / 320) px;  其他的等比例缩放也是这个意思；
+那么设计师给的设计稿给我们的都是默认640px的设计稿；因此我们可以知道font-size:200px; 因此我们可以设置此倍率为200；想px转化为rem的话，
+只要知道设计稿多少像素，比如图片的高度是500px；我们需要转换rem的话，计算公式如下：rem = (500 / 200) rem; 其他的属性也是一个意思；比如font-size,margin, padding, 等等属性都是这样计算的 即可转化为rem；我们使用简单的less预编译语言进行计算即可；
+比如想保留2位小数；可以如下写 xx = round(500rem/200,2);
+
+二：纯碎使用px作为单位；
+/* 对于400-450按照400px来计算 */
+@media (min-width: 400px) and (max-width:450px){
+    /* 640/400 = 1.6*/ 
+    @multiple: 1.6;
+    .mixin(@multiple);
+    /* 下面可以写一些私有css属性覆盖掉 */
+
+}
+/* 对于360-399按照360px来计算 */
+@media (min-width: 360px) and (max-width:399px){
+    /* 640/360 = 1.78 */ 
+    @multiple: 1.78;
+    .mixin(@multiple);
+    /* 下面可以写一些私有css属性覆盖掉 */
+}
+/* 对于320-359按照320px来计算 */
+@media (min-width: 320px) and (max-width:359px){
+    /* 640/320 = 2*/ 
+    @multiple: 2;
+    .mixin(@multiple);
+    /* 下面可以写一些私有css属性覆盖掉 */
+}
+/* 下面的mixin函数是使用less预编译语言的，里面需要使用到round方法自动计算各个值 */
+.mixin(@multiple){
+	// 比如高度为500px的话，那么计算公式如下：
+	height: round(500px / @multiple,2);
+	// 下面其他的属性值也是一个意思的，设计稿给的多少像素的话，就写多少像素，然后进行计算即可;
+}
+/* 
+其他的不需要计算的属性可以写在函数外面，这样就有一个缺点，就是你不写在外面，都写在mixin函数里面的话，那么在每次调用mixin函数内都会生成
+一份代码；代码重复了；如果我不写在里面的话，在不需要计算的样式都写在外面的话，那么加入很多类的属性有需要计算的，有不需要计算的，那么就会把
+一个css样式分成2份写，对于代码维护不太友好；因此如果项目中能使用rem的话，尽量建议使用第一种方案，使用rem作为单位来适配移动端开发；
+不过这两种方案都可以达到适配效果~ 
+ */
